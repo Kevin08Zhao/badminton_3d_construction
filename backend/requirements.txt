@@ -1,0 +1,2 @@
+# Use the project-wide lockfile (install from repo root: pip install -r requirements.txt)
+-r ../requirements.txt

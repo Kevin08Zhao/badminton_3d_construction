@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.cache/
+.mplcache/
+
+# Node
+node_modules/
+web-ui/dist/
+frontend/dist/
+
+# Runtime outputs
+result/
+
+# Training / annotation / docs (not needed to run the app)
+dataset/
+latex/
+软著/
+tools/
+frontend/
+hitNet/train_overfit.py
+hitNet/infer_overfit.py
+hitNet/output_overfit.csv
+hitNet/hitnet_output/
+ShuttleVision_KeyFunctions.py
+代码总览.md
+texput.log
+*.log
+
+# IDE
+.idea/
+.vscode/
+.cursor/
+.DS_Store

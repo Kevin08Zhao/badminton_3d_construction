@@ -1,0 +1,32 @@
+# Unified Python dependencies: main.py, backend (FastAPI), trackNetV3, hitNet, tools/
+# Python 3.10-3.13 recommended.
+#
+# GPU (CUDA): install the matching torch/torchvision wheel from https://pytorch.org first,
+# then run: pip install -r requirements.txt
+
+# --- Backend API ---
+fastapi>=0.116.0,<1
+uvicorn[standard]>=0.35.0,<1
+python-multipart>=0.0.9
+
+# --- PyTorch (CPU/MPS via PyPI; replace with CUDA wheels if needed) ---
+torch>=2.2.0
+torchvision>=0.17.0
+
+# --- YOLO pose / detection ---
+ultralytics>=8.3.0
+
+# --- Numerics & visualization (main.py) ---
+numpy>=1.26.0
+pandas>=2.0.0
+scipy>=1.11.0
+matplotlib>=3.7.0
+
+# --- OpenCV: GUI for get_court_corners.py / annotation tools; headless not used to avoid duplicate cv2 ---
+opencv-python>=4.8.0
+
+# --- TrackNetV3 & shared utils ---
+Pillow>=10.0.0
+tqdm>=4.66.0
+parse>=1.20.0
+pycocotools>=2.0.7
